@@ -1,6 +1,6 @@
 # JavaScript Practice Problems
 
-This repository contains **solutions to six JavaScript practice problems**. These problems were assigned during an internship at PW and cover a range of topics, including string manipulation, array manipulation, regular expressions, and more.
+This repository contains **solutions to six JavaScript practice problems**. These problems were assigned during an internship at *PhysicWallah* and cover a range of topics, including string manipulation, array manipulation, regular expressions, and more.
 
 # Problems
 
