@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        const inputUrl = "Here are five interesting websites that you might like to visit: https://www.netflix.com/ https://www.airbnb.com/ https://www.amazon.com/ https://www.wikipedia.org/ https://www.coursera.org/"
+        const regEx = /^(https?:\/\/)?([\da-z\.-]+\.[a-z\.]{2,6}|[\d\.]+)([\/:?=&#]{1}[\da-z\.-]+)*[\/\?]?$/gim;
+      //   console.log(regEx.test(inputUrl));
+      console.log(inputUrl.match(regEx));
+    </script>
+  </body>
+</html>

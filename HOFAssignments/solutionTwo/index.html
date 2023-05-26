@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Making a function
+      function generateRandomNumberWithDelay(delayDuration) {
+        // Generating random number
+        const randomNumber = Math.floor(Math.random() * 100000);
+        let remainingSecond = delayDuration / 1000;
+        console.log(`::: ${remainingSecond} Seconds Remaining :::`);
+
+        // Setting a time interval of 1000 ms for countdown
+        const intervalID = setInterval(() => {
+          remainingSecond--;
+          if (remainingSecond > 0) {
+            console.log(`::: ${remainingSecond} Seconds Remaining :::`);
+          } else {
+            clearInterval(intervalID);
+            console.log(randomNumber);
+          }
+        }, 1000);
+      }
+      //   Using the function
+      generateRandomNumberWithDelay(3000);
+    </script>
+  </body>
+</html>

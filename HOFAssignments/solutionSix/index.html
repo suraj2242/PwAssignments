@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function validateLinkedinUrl(url) {
+        const pattern = /^https:\/\/www.linkedin.com\/in\/[a-zA-Z0-9_-]{5,30}[a-zA-Z0-9]$/;
+        if (pattern.test(url)) {
+          console.log(`${url} is a Valid LinkedIn URL`);
+        } else {
+          console.log(`${url} is a Invalid LinkedIn URL`);
+        }
+      }
+      validateLinkedinUrl('https://www.linkedin.com/in/john-doe-123456789')
+    </script>
+  </body>
+</html>

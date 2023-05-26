@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const books = [
+        { title: "The Catcher in the Rye", author: "J.D. Salinger", year: 2010 },
+        { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+        { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+        { title: "The Hunger Games", author: "Suzanne Collins", year: 2011 },
+        { title: "The Girl with the Dragon Tattoo", author: "Stieg Larsson", year: 2005 },
+        { title: "The Help", author: "Kathryn Stockett", year: 2019 },
+      ];
+      const filteredBooks = books.filter((element) => {
+        return element.year >= 2010;
+      });
+      const filteredBooksWithCapitalizedAuthorNames = filteredBooks.map((book) => {
+        return { author: book.author.toUpperCase(), year: book.year };
+      });
+      console.log(filteredBooksWithCapitalizedAuthorNames);
+    </script>
+  </body>
+</html>
